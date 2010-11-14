@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>app/views/products/index.html.erb</string>
+	<string>app/models/product.rb</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -21,6 +21,20 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
+		<key>app/models/product.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>59</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>app/views/layouts/application.html.erb</key>
 		<dict>
 			<key>caret</key>
@@ -40,9 +54,9 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>57</integer>
+				<integer>35</integer>
 				<key>line</key>
-				<integer>19</integer>
+				<integer>22</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -105,6 +119,34 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
+		<key>db/migrate/20101106142734_create_products.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>52</integer>
+				<key>line</key>
+				<integer>6</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>db/schema.rb</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>db/seeds.rb</key>
 		<dict>
 			<key>caret</key>
@@ -137,9 +179,12 @@
 	<key>openDocuments</key>
 	<array>
 		<string>app/views/products/_form.html.erb</string>
+		<string>app/models/product.rb</string>
 		<string>public/stylesheets/depot.css</string>
 		<string>app/views/products/edit.html.erb</string>
 		<string>app/views/products/index.html.erb</string>
+		<string>db/schema.rb</string>
+		<string>db/migrate/20101106142734_create_products.rb</string>
 		<string>app/views/products/new.html.erb</string>
 		<string>app/views/products/show.html.erb</string>
 		<string>db/seeds.rb</string>
@@ -148,6 +193,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{298, 100}, {912, 1012}}</string>
+	<string>{{296, 114}, {912, 1012}}</string>
 </dict>
 </plist>
