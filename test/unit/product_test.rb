@@ -21,10 +21,11 @@ class ProductTest < ActiveSupport::TestCase
     assert product.invalid?
     #puts "*********************"
     #puts product.errors
-    #puts product.errors[:price]
+    #puts product.errors[:price]    
     #puts "*********************"
+    product.errors[:price].join('; ')
     assert_equal "must be greater than or equal to 0.01", 
-      product.errors[:price].join('; ')
+      product.errors[:price][0]
 
     product.price = 0
     assert product.invalid?
@@ -43,6 +44,7 @@ class ProductTest < ActiveSupport::TestCase
   end
 
   test "image url" do
+    # %w is a word array
     ok = %w{ fred.gif fred.jpg fred.png FRED.JPG FRED.Jpg
              http://a.b.c/x/y/z/fred.gif }
     bad = %w{ fred.doc fred.gif/more fred.gif.more }
