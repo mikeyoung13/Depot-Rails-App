@@ -86,9 +86,9 @@ class ProductTest < ActiveSupport::TestCase
                           :price       => 1)
 
     assert product.invalid?
-    assert_equal "must be at least 10 characters", 
+    assert_equal "must be between 10 and 50", 
     product.errors[:title].join('; ')
-    
+
     product = Product.new(:title       => "1234567890",
                           :description => "yyy",
                           :image_url   => "zzz.jpg",
@@ -97,5 +97,24 @@ class ProductTest < ActiveSupport::TestCase
     assert product.valid?
 
   end
+  
+  test "product title must be 50 or less characaters long" do
+    product = Product.new(:title       => "123456789012345678901234567890123456789012345678901",
+                          :description => "yyy",
+                          :image_url   => "zzz.jpg",
+                          :price       => 1)
+
+    assert product.invalid?
+    assert_equal "must be between 10 and 50", 
+    product.errors[:title].join('; ')    
+    
+    product = Product.new(:title       => "12345678901234567890123456789012345678901234567890",
+                          :description => "yyy",
+                          :image_url   => "zzz.jpg",
+                          :price       => 1)
+
+    assert product.valid?
+
+  end  
     
 end
