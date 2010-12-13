@@ -16,4 +16,19 @@ class ApplicationController < ActionController::Base
     @current_time = Time.now
   end
   
+  def increment_count
+    # best way:
+    session[:counter] ||= 0
+    
+    # works, but more verbose:
+    #if session[:counter].nil?
+    #  session[:counter] = 0
+    #end
+    session[:counter] += 1
+  end
+  
+  def reset_count
+    session[:counter]=0
+  end
+  
 end
