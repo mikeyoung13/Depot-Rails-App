@@ -43,7 +43,8 @@ class LineItemsController < ApplicationController
     @cart = current_cart
     reset_count
     product = Product.find(params[:product_id])
-    @line_item = @cart.line_items.build(:product => product)
+    @line_item = @cart.add_product(product.id)
+    #@line_item = @cart.line_items.build(:product => product)
     #@line_item = LineItem.new(params[:line_item])
 
     respond_to do |format|
