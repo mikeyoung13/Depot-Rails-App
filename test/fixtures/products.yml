@@ -21,3 +21,9 @@ ruby:
   price:       49.50
   image_url:   ruby.png
  
+java:
+  title: Programming Java 6
+  description: 
+   Java is old
+  price:       10.50
+  image_url:   java.png
