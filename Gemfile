@@ -8,6 +8,9 @@ gem 'heroku'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+# added to prevent JSON errors. Suggested by Ryan Donahue on 1/3/2011
+gem 'json_pure', "1.4.6a", :git => "git://github.com/flori/json.git", :ref => "2c0f8d"
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

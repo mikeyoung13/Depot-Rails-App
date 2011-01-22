@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/flori/json.git
+  revision: 2c0f8d2c9b15a33b8d10ffcb1959aef54d320b57
+  ref: 2c0f8d
+  specs:
+    json_pure (1.4.6a)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -38,7 +45,6 @@ GEM
       launchy (~> 0.3.2)
       rest-client (>= 1.4.0, < 1.7.0)
     i18n (0.4.2)
-    json_pure (1.4.6)
     launchy (0.3.7)
       configuration (>= 0.0.5)
       rake (>= 0.8.1)
@@ -81,5 +87,6 @@ PLATFORMS
 
 DEPENDENCIES
   heroku
+  json_pure (= 1.4.6a)!
   rails (= 3.0.3)
   sqlite3-ruby
