@@ -5,4 +5,12 @@ page[:cart].visual_effect :blind_down if @cart.total_items == 1
 page[:current_item].visual_effect :highlight,
                                   :startcolor => "#88ff88",
                                   :endcolor => "#114411"
+
+# extra effects added to play around                                 
+page.select('#cart tr').each do |element|
+#  element.visual_effect :pulsate
+end
+
+#page[:cart].visual_effect :pulsate
+
                                   
