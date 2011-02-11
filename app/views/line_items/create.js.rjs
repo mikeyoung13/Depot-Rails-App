@@ -13,4 +13,4 @@ end
 
 #page[:cart].visual_effect :pulsate
 
-                                  
+page.select("#notice").each { |notice| notice.hide }
